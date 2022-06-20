@@ -7,10 +7,10 @@ public class Server {
     public static void main(String[] args)
     {
         try {
-            LocateRegistry.createRegistry(1020);
+            LocateRegistry.createRegistry(4123);
 
             AccountManager accountManager = new AccountManagerImpl();
-            Naming.rebind("rmi://127.0.0.1:1020/AccountManagerService", accountManager);
+            Naming.rebind("rmi://0.0.0.0:4123/AccountManagerService", accountManager);
 
             accountManager.populateWithAccounts();
         } catch (Exception e) {

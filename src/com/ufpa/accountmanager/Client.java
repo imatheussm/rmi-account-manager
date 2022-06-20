@@ -7,7 +7,7 @@ public class Client {
         try
         {
             AccountManager accountManager = (AccountManager) Naming.lookup(
-                    "//127.0.0.1:1020/AccountManagerService");
+                    "//localhost:4123/AccountManagerService");
 
             System.out.println(accountManager.listAccounts());
             accountManager.addAccount(
