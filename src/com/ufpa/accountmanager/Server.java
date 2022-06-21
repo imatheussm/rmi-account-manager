@@ -5,8 +5,7 @@ import java.rmi.registry.LocateRegistry;
 
 public class Server {
 
-    public static void main(String[] args)
-    {
+    public static void main(String[] args) {
         try {
             LocateRegistry.createRegistry(4123);
 
