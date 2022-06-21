@@ -11,7 +11,7 @@ public class Server {
             LocateRegistry.createRegistry(4123);
 
             AccountManager accountManager = new AccountManagerImpl();
-            Naming.rebind("rmi://127.0.0.1:4123/AccountManagerService", accountManager);
+            Naming.bind("rmi://127.0.0.1:4123/AccountManagerService", accountManager);
 
             accountManager.populateWithAccounts();
         } catch (Exception e) {

@@ -8,7 +8,7 @@ public class Client {
         try
         {
             AccountManager accountManager = (AccountManager) Naming.lookup(
-                    "//127.0.0.1:4123/AccountManagerService");
+                    "rmi://127.0.0.1:4123/AccountManagerService");
 
 			new Menu(accountManager);
 
