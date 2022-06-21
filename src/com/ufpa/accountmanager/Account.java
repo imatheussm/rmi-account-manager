@@ -1,6 +1,7 @@
 package com.ufpa.accountmanager;
 
 public class Account {
+
     private String username, password, name;
 
     public Account(String username, String password, String name) {

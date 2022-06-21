@@ -5,6 +5,7 @@ import java.rmi.server.UnicastRemoteObject;
 import java.util.ArrayList;
 
 public class AccountManagerImpl extends UnicastRemoteObject implements AccountManager {
+
     private final ArrayList<Account> accounts = new ArrayList<>();
 
     AccountManagerImpl() throws RemoteException {

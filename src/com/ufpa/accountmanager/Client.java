@@ -4,7 +4,6 @@ import java.rmi.Naming;
 
 public class Client {
 
-
     public static void main(String[] args) {
         try
         {
@@ -18,5 +17,4 @@ public class Client {
             e.printStackTrace();
         }
     }
-
 }
