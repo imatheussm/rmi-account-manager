@@ -22,8 +22,7 @@ public class Menu {
             2. List Accounts
             3. Delete Account
             0. Exit
-            >\s
-            """
+            >\s"""
         );
 
         int option = scanner.nextInt();
